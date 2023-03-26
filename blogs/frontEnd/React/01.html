@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、react学习基础 | Lzs-Study</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/img/common/favicon.ico">
+    <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/blog/js/BaiduStatistics.js"></script>
+    <meta name="description" content="一起来学前端吧 →">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.144acb66.css" as="style"><link rel="preload" href="/blog/assets/js/app.41200af2.js" as="script"><link rel="preload" href="/blog/assets/js/3.dc4313c1.js" as="script"><link rel="preload" href="/blog/assets/js/1.6ffa0505.js" as="script"><link rel="preload" href="/blog/assets/js/74.ae19e028.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.1e8cd5f5.js"><link rel="prefetch" href="/blog/assets/js/100.94ca1c8e.js"><link rel="prefetch" href="/blog/assets/js/101.2210302d.js"><link rel="prefetch" href="/blog/assets/js/102.9956bc8d.js"><link rel="prefetch" href="/blog/assets/js/103.3027e683.js"><link rel="prefetch" href="/blog/assets/js/104.c2d537f1.js"><link rel="prefetch" href="/blog/assets/js/105.27e5e384.js"><link rel="prefetch" href="/blog/assets/js/11.4665c2a9.js"><link rel="prefetch" href="/blog/assets/js/12.25e51219.js"><link rel="prefetch" href="/blog/assets/js/13.2f465012.js"><link rel="prefetch" href="/blog/assets/js/14.ad186ee9.js"><link rel="prefetch" href="/blog/assets/js/15.5084f789.js"><link rel="prefetch" href="/blog/assets/js/16.316fb22e.js"><link rel="prefetch" href="/blog/assets/js/17.6a9ba9b0.js"><link rel="prefetch" href="/blog/assets/js/18.55ef468a.js"><link rel="prefetch" href="/blog/assets/js/19.1bdd4438.js"><link rel="prefetch" href="/blog/assets/js/20.21896509.js"><link rel="prefetch" href="/blog/assets/js/21.a23507d1.js"><link rel="prefetch" href="/blog/assets/js/22.886b87a8.js"><link rel="prefetch" href="/blog/assets/js/23.c9b79539.js"><link rel="prefetch" href="/blog/assets/js/24.b47c940e.js"><link rel="prefetch" href="/blog/assets/js/25.10b99ce8.js"><link rel="prefetch" href="/blog/assets/js/26.da780aaa.js"><link rel="prefetch" href="/blog/assets/js/27.432494d5.js"><link rel="prefetch" href="/blog/assets/js/28.2bbcf00a.js"><link rel="prefetch" href="/blog/assets/js/29.dd151750.js"><link rel="prefetch" href="/blog/assets/js/30.bb8ecc3a.js"><link rel="prefetch" href="/blog/assets/js/31.010ffd1d.js"><link rel="prefetch" href="/blog/assets/js/32.1f605968.js"><link rel="prefetch" href="/blog/assets/js/33.d1273b4c.js"><link rel="prefetch" href="/blog/assets/js/34.1400a36f.js"><link rel="prefetch" href="/blog/assets/js/35.519ccb29.js"><link rel="prefetch" href="/blog/assets/js/36.fd211c30.js"><link rel="prefetch" href="/blog/assets/js/37.607d53a2.js"><link rel="prefetch" href="/blog/assets/js/38.16ea1b1c.js"><link rel="prefetch" href="/blog/assets/js/39.8208f22a.js"><link rel="prefetch" href="/blog/assets/js/4.90190d4e.js"><link rel="prefetch" href="/blog/assets/js/40.f1deee61.js"><link rel="prefetch" href="/blog/assets/js/41.5a9339ad.js"><link rel="prefetch" href="/blog/assets/js/42.3c799a4f.js"><link rel="prefetch" href="/blog/assets/js/43.a83f8cfa.js"><link rel="prefetch" href="/blog/assets/js/44.f729ac0a.js"><link rel="prefetch" href="/blog/assets/js/45.23cc8577.js"><link rel="prefetch" href="/blog/assets/js/46.b41c442a.js"><link rel="prefetch" href="/blog/assets/js/47.d5392e73.js"><link rel="prefetch" href="/blog/assets/js/48.d99d6c14.js"><link rel="prefetch" href="/blog/assets/js/49.43813992.js"><link rel="prefetch" href="/blog/assets/js/5.5d49b1e5.js"><link rel="prefetch" href="/blog/assets/js/50.ef0f1a7f.js"><link rel="prefetch" href="/blog/assets/js/51.696e5dfd.js"><link rel="prefetch" href="/blog/assets/js/52.47b401a2.js"><link rel="prefetch" href="/blog/assets/js/53.8fe25942.js"><link rel="prefetch" href="/blog/assets/js/54.baa66dc8.js"><link rel="prefetch" href="/blog/assets/js/55.b37b55ab.js"><link rel="prefetch" href="/blog/assets/js/56.57bb733e.js"><link rel="prefetch" href="/blog/assets/js/57.ef57d52d.js"><link rel="prefetch" href="/blog/assets/js/58.29307055.js"><link rel="prefetch" href="/blog/assets/js/59.80667b86.js"><link rel="prefetch" href="/blog/assets/js/6.d629b6e8.js"><link rel="prefetch" href="/blog/assets/js/60.e1be2e00.js"><link rel="prefetch" href="/blog/assets/js/61.8e4f495a.js"><link rel="prefetch" href="/blog/assets/js/62.7ddecd00.js"><link rel="prefetch" href="/blog/assets/js/63.71747c39.js"><link rel="prefetch" href="/blog/assets/js/64.ac3dcd64.js"><link rel="prefetch" href="/blog/assets/js/65.2b0d3ec5.js"><link rel="prefetch" href="/blog/assets/js/66.0ddb735b.js"><link rel="prefetch" href="/blog/assets/js/67.959fbce8.js"><link rel="prefetch" href="/blog/assets/js/68.fc621fdf.js"><link rel="prefetch" href="/blog/assets/js/69.f4aedafb.js"><link rel="prefetch" href="/blog/assets/js/7.8a501913.js"><link rel="prefetch" href="/blog/assets/js/70.67374505.js"><link rel="prefetch" href="/blog/assets/js/71.4c8ffeff.js"><link rel="prefetch" href="/blog/assets/js/72.ed20068e.js"><link rel="prefetch" href="/blog/assets/js/73.73d69187.js"><link rel="prefetch" href="/blog/assets/js/75.68fd7ddc.js"><link rel="prefetch" href="/blog/assets/js/76.3034e47f.js"><link rel="prefetch" href="/blog/assets/js/77.3f9522ac.js"><link rel="prefetch" href="/blog/assets/js/78.11875eab.js"><link rel="prefetch" href="/blog/assets/js/79.ea437ea4.js"><link rel="prefetch" href="/blog/assets/js/8.a121115a.js"><link rel="prefetch" href="/blog/assets/js/80.8299c6f6.js"><link rel="prefetch" href="/blog/assets/js/81.6c45aade.js"><link rel="prefetch" href="/blog/assets/js/82.834bf390.js"><link rel="prefetch" href="/blog/assets/js/83.c853ef36.js"><link rel="prefetch" href="/blog/assets/js/84.9cb0f01a.js"><link rel="prefetch" href="/blog/assets/js/85.3d9c51fc.js"><link rel="prefetch" href="/blog/assets/js/86.7e33f84a.js"><link rel="prefetch" href="/blog/assets/js/87.28cc1dc7.js"><link rel="prefetch" href="/blog/assets/js/88.5bf52d81.js"><link rel="prefetch" href="/blog/assets/js/89.63437ceb.js"><link rel="prefetch" href="/blog/assets/js/9.95109948.js"><link rel="prefetch" href="/blog/assets/js/90.575579a6.js"><link rel="prefetch" href="/blog/assets/js/91.864b1d09.js"><link rel="prefetch" href="/blog/assets/js/92.9f58d020.js"><link rel="prefetch" href="/blog/assets/js/93.164272e4.js"><link rel="prefetch" href="/blog/assets/js/94.5960b1db.js"><link rel="prefetch" href="/blog/assets/js/95.1feaebc8.js"><link rel="prefetch" href="/blog/assets/js/96.b610e95c.js"><link rel="prefetch" href="/blog/assets/js/97.3fc0f92b.js"><link rel="prefetch" href="/blog/assets/js/98.bc62eb74.js"><link rel="prefetch" href="/blog/assets/js/99.9be50f27.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.144acb66.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Lzs-Study</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>一起来学前端吧 →</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Lzs</span>
+            
+          <span data-v-4e82dffc>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/img/common/logo.jpg" alt="Lzs-Study" class="logo"> <span class="site-name">Lzs-Study</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      技术分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/leetcode/" class="nav-link"><i class="undefined"></i>
+  leetcode
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/shousi/" class="nav-link"><i class="undefined"></i>
+  shousi
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML+CSS/" class="nav-link"><i class="undefined"></i>
+  HTML+CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript高级/" class="nav-link"><i class="undefined"></i>
+  JavaScript高级
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript基础/" class="nav-link"><i class="undefined"></i>
+  JavaScript基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Node/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Note/" class="nav-link"><i class="undefined"></i>
+  Note
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/chat/" class="nav-link"><i class="undefined"></i>
+  chat
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/博客/" class="nav-link"><i class="undefined"></i>
+  博客
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      文章目录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/blogs/frontEnd/" class="nav-link router-link-active"><i class="undefined"></i>
+  从0学前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/blogs/algorithm.html" class="nav-link"><i class="undefined"></i>
+  算法学习
+</a></li><li class="dropdown-item"><!----> <a href="/blog/chat/" class="nav-link"><i class="undefined"></i>
+  心情随笔
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/" class="nav-link"><i class="undefined"></i>
+  博客搭建
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系lzs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/innovation66" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/3224192550974200" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/blog/img/common/avatar.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Lzs
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>94</h3> <h6 data-v-828910c6>文章</h6></div> <div data-v-828910c6><h3 data-v-828910c6>113</h3> <h6 data-v-828910c6>标签</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      技术分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/leetcode/" class="nav-link"><i class="undefined"></i>
+  leetcode
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/shousi/" class="nav-link"><i class="undefined"></i>
+  shousi
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML+CSS/" class="nav-link"><i class="undefined"></i>
+  HTML+CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript高级/" class="nav-link"><i class="undefined"></i>
+  JavaScript高级
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript基础/" class="nav-link"><i class="undefined"></i>
+  JavaScript基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Node/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Note/" class="nav-link"><i class="undefined"></i>
+  Note
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/chat/" class="nav-link"><i class="undefined"></i>
+  chat
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/博客/" class="nav-link"><i class="undefined"></i>
+  博客
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      文章目录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/blogs/frontEnd/" class="nav-link router-link-active"><i class="undefined"></i>
+  从0学前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/blogs/algorithm.html" class="nav-link"><i class="undefined"></i>
+  算法学习
+</a></li><li class="dropdown-item"><!----> <a href="/blog/chat/" class="nav-link"><i class="undefined"></i>
+  心情随笔
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/" class="nav-link"><i class="undefined"></i>
+  博客搭建
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系lzs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/innovation66" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/3224192550974200" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/blog/blogs/frontEnd/" aria-current="page" class="sidebar-link">前端技术学习目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端学习网站和软件下载</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML+CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript高级</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ECMAScript6~12</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vuejs</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>一、react学习基础</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Lzs</span>
+            
+          <span data-v-4e82dffc>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">一、react学习基础</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>Lzs</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2023/2/16</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>react</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="react-学习基础篇"><a href="#react-学习基础篇" class="header-anchor">#</a> react 学习基础篇</h1> <h4 id="_1-什么是-react"><a href="#_1-什么是-react" class="header-anchor">#</a> 1. 什么是 react</h4> <ul><li><p>React 是什么呢？</p> <ul><li>相信每个做开发的人对它都或多或少有一些印象；</li> <li>这里我们来看一下官方对它的解释：用于构建用户界面的 JavaScript 库；</li></ul> <p><img src="https://codermjjh.cn/assets/image-20220907221831304.9588c383.png" alt="image-20220907221831304"></p></li> <li><p>目前对于前端开发来说，几乎很少直接使用原生的 JavaScript 来开发应用程序，而是选择一个 JavaScript 库（框架）。</p> <ul><li>在过去的很长时间内，jQuery 是被使用最多的 JavaScript 库；</li> <li>在过去的一份调查中显示，全球前 10,000 个访问最高的网站中，有 65%使用了 jQuery，是当时最受欢迎的 JavaScript 库；</li> <li>但是，目前甚至已经处于淘汰的边缘了；</li></ul></li> <li><p>而无论是国内外，最流行的其实是三大框架：Vue、React、Angular。</p></li></ul> <h3 id="前端三大框架"><a href="#前端三大框架" class="header-anchor">#</a> 前端三大框架</h3> <ul><li><p>目前前端最流行的是三大框架：</p> <p><img src="https://codermjjh.cn/assets/image-20220907222313743.96211c8b.png" alt="image-20220907222313743"></p></li></ul> <h3 id="框架数据对比-google-指数"><a href="#框架数据对比-google-指数" class="header-anchor">#</a> 框架数据对比（Google 指数）</h3> <p><img src="https://codermjjh.cn/assets/image-20220907222328831.311dc37c.png" alt="image-20220907222328831"></p> <h3 id="npm-下载量-react-01-为什么要学-react-npm-下载量"><a href="#npm-下载量-react-01-为什么要学-react-npm-下载量" class="header-anchor">#</a> npm 下载量[#](react/01 为什么要学 React#npm-下载量)</h3> <p><img src="https://codermjjh.cn/assets/image-20220907222344357.ebd5071f.png" alt="image-20220907222344357"></p> <h3 id="框架数据对比-github"><a href="#框架数据对比-github" class="header-anchor">#</a> 框架数据对比（GitHub）</h3> <p><img src="https://codermjjh.cn/assets/image-20220907222354982.3d70b24a.png" alt="image-20220907222354982"></p> <h3 id="hankertrank-调查显示"><a href="#hankertrank-调查显示" class="header-anchor">#</a> HankertRank 调查显示</h3> <ul><li>在 HackerRank 中，有一份调用，你更想要学习的 framework（框架）：</li></ul> <p><img src="https://codermjjh.cn/assets/image-20220907222422725.3c4cbf21.png" alt="image-20220907222422725"></p> <h3 id="招聘岗位对-react-的要求"><a href="#招聘岗位对-react-的要求" class="header-anchor">#</a> 招聘岗位对 React 的要求</h3> <p><img src="https://codermjjh.cn/assets/image-20220907222440559.527c717e.png" alt="image-20220907222440559"></p> <h2 id="react-的技术特点"><a href="#react-的技术特点" class="header-anchor">#</a> React 的技术特点</h2> <ul><li>React 由 Facebook 来更新和维护，它是大量优秀程序员的思想结晶：
+<ul><li>React 的流行不仅仅局限于普通开发工程师对它的认可；</li> <li>大量流行的其他框架借鉴 React 的思想；</li></ul></li> <li>Vue.js 框架设计之初，有很多的灵感来自 Angular 和 React。
+<ul><li>包括 Vue3 很多新的特性，也是借鉴和学习了 React；</li> <li>比如 React Hooks 是开创性的新功能（也是我们课程的重点）；</li> <li>Vue Composition API 学习了 React Hooks 的思想；</li></ul></li> <li>Flutter 的很多灵感都来自 React，来自官网的一段话：（SwiftUI 呢）
+<ul><li>事实上 Flutter 中的 Widget – Element – RenderObject；</li> <li>对应 React 的就是 JSX – 虚拟 DOM – 真实 DOM；</li></ul></li> <li>所以 React 可以说是前端的先驱者，它总是会引领整个前端的潮流。</li></ul> <h2 id="react-的介绍和特点"><a href="#react-的介绍和特点" class="header-anchor">#</a> React 的介绍和特点</h2> <h3 id="react-介绍-技术角度-react-02-邂逅-react-开发-react-介绍-技术角度"><a href="#react-介绍-技术角度-react-02-邂逅-react-开发-react-介绍-技术角度" class="header-anchor">#</a> React 介绍 (技术角度)[#](react/02 邂逅 React 开发#react-介绍-技术角度)</h3> <ul><li>React 是什么？
+<ul><li>React：用于构建用户界面的 JavaScript 库；</li> <li>React 的官网文档：https://zh-hans.reactjs.org/<img src="https://codermjjh.cn/assets/image-20220907223113461.6959cccb.png" alt="image-20220907223113461"></li></ul></li></ul> <h3 id="react-的特点-声明式编程-react-02-邂逅-react-开发-react-的特点-声明式编程"><a href="#react-的特点-声明式编程-react-02-邂逅-react-开发-react-的特点-声明式编程" class="header-anchor">#</a> React 的特点 – 声明式编程[#](react/02 邂逅 React 开发#react-的特点-–-声明式编程)</h3> <ul><li>声明式编程：
+<ul><li>声明式编程是目前整个大前端开发的模式：Vue、React、Flutter、SwiftUI；</li> <li>它允许我们只需要维护自己的状态，当状态改变时，React 可以根据最新的状态去渲染我们的 UI 界面；</li> <li>UI = 函数(状态)</li></ul></li></ul> <p><img src="https://codermjjh.cn/assets/image-20220907223144460.be1bcd26.png" alt="image-20220907223144460"></p> <h3 id="react-特点-组件化开发-react-02-邂逅-react-开发-react-特点-组件化开发"><a href="#react-特点-组件化开发-react-02-邂逅-react-开发-react-特点-组件化开发" class="header-anchor">#</a> React 特点 – 组件化开发[#](react/02 邂逅 React 开发#react-特点-–-组件化开发)</h3> <ul><li>组件化开发：
+<ul><li>组件化开发页面目前前端的流行趋势，我们会将复杂的界面拆分成一个个小的组件；</li> <li>如何合理的进行组件的划分和设计也是后面我会讲到的一个重点；<img src="https://codermjjh.cn/assets/image-20220907223203464.23674ecf.png" alt="image-20220907223203464"></li></ul></li></ul> <h3 id="react-的特点-多平台适配-react-02-邂逅-react-开发-react-的特点-多平台适配"><a href="#react-的特点-多平台适配-react-02-邂逅-react-开发-react-的特点-多平台适配" class="header-anchor">#</a> React 的特点 – 多平台适配[#](react/02 邂逅 React 开发#react-的特点-–-多平台适配)</h3> <ul><li><p>多平台适配：</p> <ul><li>2013 年，React 发布之初主要是开发 Web 页面；</li> <li>2015 年，Facebook 推出了 ReactNative，用于开发移动端跨平台；（虽然目前 Flutter 非常火爆，但是还是有很多公司在使用 ReactNative）；</li> <li>2017 年，Facebook 推出 ReactVR，用于开发虚拟现实 Web 应用程序；（VR 也会是一个火爆的应用场景）；</li></ul> <p><img src="https://codermjjh.cn/assets/image-20220907223230620.ce228714.png" alt="image-20220907223230620"></p></li></ul> <h3 id="hello-react-案例说明-react-02-邂逅-react-开发-hello-react-案例说明"><a href="#hello-react-案例说明-react-02-邂逅-react-开发-hello-react-案例说明" class="header-anchor">#</a> Hello React 案例说明[#](react/02 邂逅 React 开发#hello-react-案例说明)</h3> <ul><li>为了演练 React，我们可以提出一个小的需求：
+<ul><li>在界面显示一个文本：Hello World</li> <li>点击下方的一个按钮，点击后文本改变为 Hello React</li></ul></li> <li>当然，你也可以使用 jQuery 和 Vue 来实现，甚至是原生方式来实现，对它们分别进行对比学习<img src="https://codermjjh.cn/assets/image-20220907223251341.df7943e7.png" alt="image-20220907223251341"></li></ul> <h2 id="react-的开发依赖分析-react-02-邂逅-react-开发-react-的开发依赖分析"><a href="#react-的开发依赖分析-react-02-邂逅-react-开发-react-的开发依赖分析" class="header-anchor">#</a> React 的开发依赖分析[#](react/02 邂逅 React 开发#react-的开发依赖分析)</h2> <h3 id="react-的开发依赖-react-02-邂逅-react-开发-react-的开发依赖"><a href="#react-的开发依赖-react-02-邂逅-react-开发-react-的开发依赖" class="header-anchor">#</a> React 的开发依赖[#](react/02 邂逅 React 开发#react-的开发依赖)</h3> <ul><li>开发 React 必须依赖三个库：
+<ul><li>react：包含 react 所必须的核心代码</li> <li>react-dom：react 渲染在不同平台所需要的核心代码</li> <li>babel：将 jsx 转换成 React 代码的工具</li></ul></li> <li>第一次接触 React 会被它繁琐的依赖搞蒙，居然依赖这么多东西： （直接放弃？）
+<ul><li>对于 Vue 来说，我们只是依赖一个 vue.js 文件即可，但是 react 居然要依赖三个包。</li> <li>其实呢，这三个库是各司其职的，目的就是让每一个库只单纯做自己的事情;</li> <li>在 React 的 0.14 版本之前是没有 react-dom 这个概念的，所有功能都包含在 react 里；</li></ul></li> <li>为什么要进行拆分呢？原因就是 react-native。
+<ul><li>react 包中包含了 react web 和 react-native 所共同拥有的核心代码。</li> <li>react-dom 针对 web 和 native 所完成的事情不同：
+<ul><li>web 端：react-dom 会将 jsx 最终渲染成真实的 DOM，显示在浏览器中</li> <li>native 端：react-dom 会将 jsx 最终渲染成原生的控件（比如 Android 中的 Button，iOS 中的 UIButton）。</li></ul></li></ul></li></ul> <h3 id="babel-和-react-的关系-react-02-邂逅-react-开发-babel-和-react-的关系"><a href="#babel-和-react-的关系-react-02-邂逅-react-开发-babel-和-react-的关系" class="header-anchor">#</a> Babel 和 React 的关系[#](react/02 邂逅 React 开发#babel-和-react-的关系)</h3> <ul><li>babel 是什么呢？
+<ul><li>Babel ，又名 Babel.js。</li> <li>是目前前端使用非常广泛的编译器、转移器。</li> <li>比如当下很多浏览器并不支持 ES6 的语法，但是确实 ES6 的语法非常的简洁和方便，我们开发时希望使用它。</li> <li>那么编写源码时我们就可以使用 ES6 来编写，之后通过 Babel 工具，将 ES6 转成大多数浏览器都支持的 ES5 的语法。</li></ul></li> <li>React 和 Babel 的关系：
+<ul><li>默认情况下开发 React 其实可以不使用 babel。</li> <li>但是前提是我们自己使用 React.createElement 来编写源代码，它编写的代码非常的繁琐和可读性差。</li> <li>那么我们就可以直接编写 jsx（JavaScript XML）的语法，并且让 babel 帮助我们转换成 React.createElement。</li></ul></li></ul> <h3 id="react-的依赖引入-react-02-邂逅-react-开发-react-的依赖引入"><a href="#react-的依赖引入-react-02-邂逅-react-开发-react-的依赖引入" class="header-anchor">#</a> React 的依赖引入[#](react/02 邂逅 React 开发#react-的依赖引入)</h3> <ul><li><p>所以，我们在编写 React 代码时，这三个依赖都是必不可少的。</p></li> <li><p>那么，如何添加这三个依赖：</p> <ul><li>方式一：直接 CDN 引入</li> <li>方式二：下载后，添加本地依赖</li> <li>方式三：通过 npm 管理（后续脚手架再使用）</li></ul></li> <li><p>暂时我们直接通过 CDN 引入，来演练下面的示例程序：</p> <ul><li><p>这里有一个 crossorigin 的属性，这个属性的目的是为了拿到跨域脚本的错误信息</p> <p>html</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot; crossorigin&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot; crossorigin&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li></ul></li></ul> <h2 id="hello-world-react-02-邂逅-react-开发-hello-world"><a href="#hello-world-react-02-邂逅-react-开发-hello-world" class="header-anchor">#</a> Hello World[#](react/02 邂逅 React 开发#hello-world)</h2> <ul><li><p>第一步：在界面上通过 React 显示一个 Hello World</p> <ul><li><p>注意：这里我们编写 React 的 script 代码中，必须添加 type=&quot;text/babel&quot;，作用是可以让 babel 解析 jsx 的语法</p> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义文章
+      const message = &quot;Hello World&quot;;
+      // 2 渲染内容
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+      root.render(&lt;h2&gt;{message}&lt;/h2&gt;);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div></li></ul></li> <li><p>ReactDOM. createRoot 函数：用于创建一个 React 根，之后渲染的内容会包含在这个根中</p> <ul><li>参数：将渲染的内容，挂载到哪一个 HTML 元素上
+<ul><li>这里我们已经提定义一个 id 为 app 的 div</li></ul></li></ul></li> <li><p>root.render 函数:</p> <ul><li>参数：要渲染的根组件</li></ul></li> <li><p>我们可以通过{ }语法来引入外部的变量或者表达式</p></li></ul> <h3 id="hello-react-错误做法-react-02-邂逅-react-开发-hello-react-错误做法"><a href="#hello-react-错误做法-react-02-邂逅-react-开发-hello-react-错误做法" class="header-anchor">#</a> Hello React – 错误做法[#](react/02 邂逅 React 开发#hello-react-–-错误做法)</h3> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;
+      &lt;!-- &lt;button class=&quot;btn&quot;&gt;按钮&lt;/button&gt; --&gt;
+    &lt;/div&gt;
+    &lt;!-- 不能将按钮写扎起对应的根元素中 react会对其中内容进行替换 --&gt;
+    &lt;button class=&quot;btn&quot;&gt;按钮&lt;/button&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义文章
+      const message = &quot;Hello World&quot;;
+      // 2 渲染内容
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+      root.render(&lt;h2&gt;{message}&lt;/h2&gt;);
+      // 3 监听按钮的点击
+      const btnEl = document.querySelector(&quot;.btn&quot;);
+      btnEl.onclick = function () {
+        root.render(&lt;h2&gt;Hello React&lt;/h2&gt;);
+      };
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="hello-react-正确做法-react-02-邂逅-react-开发-hello-react-正确做法"><a href="#hello-react-正确做法-react-02-邂逅-react-开发-hello-react-正确做法" class="header-anchor">#</a> Hello React – 正确做法[#](react/02 邂逅 React 开发#hello-react-–-正确做法)</h3> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义文章
+      let message = &quot;Hello World&quot;;
+      const btnClick = () =&gt; {
+        message = &quot;Hello React&quot;;
+        rootRender();
+      };
+      // 2 渲染内容
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+
+      function rootRender() {
+        root.render(
+          &lt;div&gt;
+            &lt;h2&gt;{message}&lt;/h2&gt;
+            // onClick
+            &lt;button onClick={btnClick}&gt;修改文本&lt;/button&gt;
+          &lt;/div&gt;
+        );
+      }
+      rootRender();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="hello-react-组件化开发-react-02-邂逅-react-开发-hello-react-组件化开发"><a href="#hello-react-组件化开发-react-02-邂逅-react-开发-hello-react-组件化开发" class="header-anchor">#</a> Hello React – 组件化开发[#](react/02 邂逅 React 开发#hello-react-–-组件化开发)</h2> <ul><li><p>整个逻辑其实可以看做一个整体，那么我们就可以将其封装成一个组件：</p> <ul><li>我们说过 root.render 参数是一个 HTML 元素或者一个组件；</li> <li>所以我们可以先将之前的业务逻辑封装到一个组件中，然后传入到 ReactDOM.render 函数中的第一个参数；</li></ul></li> <li><p>在 React 中，如何封装一个组件呢？这里我们暂时使用类的方式封装组件：</p> <ol><li>定义一个类（类名大写，组件的名称是必须大写的，小写会被认为是 HTML 元素），继承自 React.Component</li> <li>实现当前组件的 render 函数</li></ol> <ul><li>render 当中返回的 jsx 内容，就是之后 React 会帮助我们渲染的内容</li></ul> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义根组件
+      class App extends React.Component {
+        render() {
+          return &lt;h2&gt;Hello World&lt;/h2&gt;;
+        }
+      }
+      // 2 渲染根组件
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+      root.render(&lt;App /&gt;);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div></li></ul> <h3 id="组件化-数据依赖-react-02-邂逅-react-开发-组件化-数据依赖"><a href="#组件化-数据依赖-react-02-邂逅-react-开发-组件化-数据依赖" class="header-anchor">#</a> 组件化 - 数据依赖[#](react/02 邂逅 React 开发#组件化-数据依赖)</h3> <p>组件化问题一：数据在哪里定义？</p> <ul><li>在组件中的数据，我们可以分成两类：
+<ul><li>参与界面更新的数据：当数据变量时，需要更新组件渲染的内容；</li> <li>不参与界面更新的数据：当数据变量时，不需要更新将组建渲染的内容；</li></ul></li> <li>参与界面更新的数据我们也可以称之为是参与数据流，这个数据是定义在当前对象的 state 中
+<ul><li>我们可以通过在构造函数中 this.state =</li> <li>当我们的数据发生变化时，我们可以调用 this.setState 来更新数据，并且通知 React 进行 update 操作；
+<ul><li>在进行 update 操作时，就会重新调用 render 函数，并且使用最新的数据，来渲染界面</li></ul></li></ul></li></ul> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义根组件
+      class App extends React.Component {
+        render() {
+          return (
+            &lt;div&gt;
+              &lt;h2&gt;message:{this.state.message}&lt;/h2&gt;
+            &lt;/div&gt;
+          );
+        }
+        constructor() {
+          super();
+          this.state = {
+            message: &quot;Hello World&quot;,
+          };
+        }
+      }
+      // 2 渲染根组件
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+      root.render(&lt;App /&gt;);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h3 id="组件化-事件绑定-react-02-邂逅-react-开发-组件化-事件绑定"><a href="#组件化-事件绑定-react-02-邂逅-react-开发-组件化-事件绑定" class="header-anchor">#</a> 组件化 – 事件绑定[#](react/02 邂逅 React 开发#组件化-–-事件绑定)</h3> <ul><li><p>组件化问题二：事件绑定中的 this</p> <ul><li>在类中直接定义一个函数，并且将这个函数绑定到元素的 onClick 事件上，当前这个函数的 this 指向的是谁呢？</li></ul></li> <li><p>默认情况下是 undefined</p> <ul><li>很奇怪，居然是 undefined；</li> <li>因为在正常的 DOM 操作中，监听点击，监听函数中的 this 其实是节点对象（比如说是 button 对象）；</li> <li>这次因为 React 并不是直接渲染成真实的 DOM，我们所编写的 button 只是一个语法糖，它的本质 React 的 Element 对象；</li> <li>那么在这里发生监听的时候，react 在执行函数时并没有绑定 this，默认情况下就是一个 undefined；</li></ul></li> <li><p>我们在绑定的函数中，可能想要使用当前对象，比如执行 this.setState 函数，就必须拿到当前对象的 this</p> <ul><li><p>我们就需要在传入函数时，给这个函数直接绑定 this</p></li> <li><p>类似于下面的写法：</p> <p>html</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// html
+&lt;div&gt;
+  &lt;h2&gt;{this.state.message}&lt;/h2&gt;
+  &lt;button onClick={this.changeText.bind(this)}&gt;改变文本&lt;/button&gt;
+&lt;/div&gt;
+
+// js
+changeText() {
+	console.log(this)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li></ul></li></ul> <h3 id="电影列表展示-react-02-邂逅-react-开发-电影列表展示"><a href="#电影列表展示-react-02-邂逅-react-开发-电影列表展示" class="header-anchor">#</a> 电影列表展示[#](react/02 邂逅 React 开发#电影列表展示)</h3> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义根组件
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            message: &quot;Hello World&quot;,
+            movies: [&quot;大话西游&quot;, &quot;树先生&quot;, &quot;让子弹飞&quot;, &quot;哈利波特&quot;],
+          };
+        }
+        render() {
+          return (
+            &lt;ul&gt;
+              {this.state.movies.map((item) =&gt; {
+                return &lt;li key={item}&gt;{item}&lt;/li&gt;;
+              })}
+            &lt;/ul&gt;
+          );
+        }
+      }
+      // 2 渲染根组件
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+      root.render(&lt;App /&gt;);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h3 id="计数器案例-react-02-邂逅-react-开发-计数器案例"><a href="#计数器案例-react-02-邂逅-react-开发-计数器案例" class="header-anchor">#</a> 计数器案例[#](react/02 邂逅 React 开发#计数器案例)</h3> <p>jsx</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6/babel.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      // 1 定义根组件
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            counter: 0,
+          };
+        }
+        render() {
+          const { counter } = this.state;
+          return (
+            &lt;div&gt;
+              &lt;h2&gt;当前计数: {counter}&lt;/h2&gt;
+              &lt;button onClick={this.increment.bind(this)}&gt;+1&lt;/button&gt;
+              &lt;button onClick={this.decrement.bind(this)}&gt;-1&lt;/button&gt;
+            &lt;/div&gt;
+          );
+        }
+        increment() {
+          this.setState({
+            counter: this.state.counter + 1,
+          });
+        }
+        decrement() {
+          this.setState({
+            counter: this.state.counter - 1,
+          });
+        }
+      }
+
+      // 2 渲染根组件
+      const root = ReactDOM.createRoot(document.querySelector(&quot;#app&quot;));
+      root.render(&lt;App /&gt;);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><h2 id="vscode-代码片段-react-02-邂逅-react-开发-vscode-代码片段"><a href="#vscode-代码片段-react-02-邂逅-react-开发-vscode-代码片段" class="header-anchor">#</a> VSCode 代码片段[#](react/02 邂逅 React 开发#vscode-代码片段)</h2> <ul><li>我们在前面练习 React 的过程中，有些代码片段是需要经常写的，我们在 VSCode 中我们可以生成一个代码片段，方便我们快速生成。</li> <li>VSCode 中的代码片段有固定的格式，所以我们一般会借助于一个在线工具来完成。</li> <li>具体的步骤如下：
+<ul><li>第一步，复制自己需要生成代码片段的代码；</li> <li>第二步，https://snippet-generator.app/在该网站中生成代码片段；</li> <li>第三步，在 VSCode 中配置代码片段；</li></ul></li></ul> <h3 id="代码片段过程-react-02-邂逅-react-开发-代码片段过程"><a href="#代码片段过程-react-02-邂逅-react-开发-代码片段过程" class="header-anchor">#</a> 代码片段过程[#](react/02 邂逅 React 开发#代码片段过程)</h3> <p><img src="https://codermjjh.cn/assets/image-20221021210104542.521c2cf2.png" alt="image-20221021210104542"></p> <ul><li>选择对应的文件,例如现在就是 HTML 文件</li> <li>将网站生成的代码粘贴到对应的 HTML 文件中</li></ul></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#前端三大框架" class="sidebar-link reco-side-前端三大框架" data-v-70334359>前端三大框架</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#框架数据对比-google-指数" class="sidebar-link reco-side-框架数据对比-google-指数" data-v-70334359>框架数据对比（Google 指数）</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#npm-下载量-react-01-为什么要学-react-npm-下载量" class="sidebar-link reco-side-npm-下载量-react-01-为什么要学-react-npm-下载量" data-v-70334359>npm 下载量[#](react/01 为什么要学 React#npm-下载量)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#框架数据对比-github" class="sidebar-link reco-side-框架数据对比-github" data-v-70334359>框架数据对比（GitHub）</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#hankertrank-调查显示" class="sidebar-link reco-side-hankertrank-调查显示" data-v-70334359>HankertRank 调查显示</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#招聘岗位对-react-的要求" class="sidebar-link reco-side-招聘岗位对-react-的要求" data-v-70334359>招聘岗位对 React 的要求</a></li><li class="level-2" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的技术特点" class="sidebar-link reco-side-react-的技术特点" data-v-70334359>React 的技术特点</a></li><li class="level-2" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的介绍和特点" class="sidebar-link reco-side-react-的介绍和特点" data-v-70334359>React 的介绍和特点</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-介绍-技术角度-react-02-邂逅-react-开发-react-介绍-技术角度" class="sidebar-link reco-side-react-介绍-技术角度-react-02-邂逅-react-开发-react-介绍-技术角度" data-v-70334359>React 介绍 (技术角度)[#](react/02 邂逅 React 开发#react-介绍-技术角度)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的特点-声明式编程-react-02-邂逅-react-开发-react-的特点-声明式编程" class="sidebar-link reco-side-react-的特点-声明式编程-react-02-邂逅-react-开发-react-的特点-声明式编程" data-v-70334359>React 的特点 – 声明式编程[#](react/02 邂逅 React 开发#react-的特点-–-声明式编程)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-特点-组件化开发-react-02-邂逅-react-开发-react-特点-组件化开发" class="sidebar-link reco-side-react-特点-组件化开发-react-02-邂逅-react-开发-react-特点-组件化开发" data-v-70334359>React 特点 – 组件化开发[#](react/02 邂逅 React 开发#react-特点-–-组件化开发)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的特点-多平台适配-react-02-邂逅-react-开发-react-的特点-多平台适配" class="sidebar-link reco-side-react-的特点-多平台适配-react-02-邂逅-react-开发-react-的特点-多平台适配" data-v-70334359>React 的特点 – 多平台适配[#](react/02 邂逅 React 开发#react-的特点-–-多平台适配)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#hello-react-案例说明-react-02-邂逅-react-开发-hello-react-案例说明" class="sidebar-link reco-side-hello-react-案例说明-react-02-邂逅-react-开发-hello-react-案例说明" data-v-70334359>Hello React 案例说明[#](react/02 邂逅 React 开发#hello-react-案例说明)</a></li><li class="level-2" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的开发依赖分析-react-02-邂逅-react-开发-react-的开发依赖分析" class="sidebar-link reco-side-react-的开发依赖分析-react-02-邂逅-react-开发-react-的开发依赖分析" data-v-70334359>React 的开发依赖分析[#](react/02 邂逅 React 开发#react-的开发依赖分析)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的开发依赖-react-02-邂逅-react-开发-react-的开发依赖" class="sidebar-link reco-side-react-的开发依赖-react-02-邂逅-react-开发-react-的开发依赖" data-v-70334359>React 的开发依赖[#](react/02 邂逅 React 开发#react-的开发依赖)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#babel-和-react-的关系-react-02-邂逅-react-开发-babel-和-react-的关系" class="sidebar-link reco-side-babel-和-react-的关系-react-02-邂逅-react-开发-babel-和-react-的关系" data-v-70334359>Babel 和 React 的关系[#](react/02 邂逅 React 开发#babel-和-react-的关系)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#react-的依赖引入-react-02-邂逅-react-开发-react-的依赖引入" class="sidebar-link reco-side-react-的依赖引入-react-02-邂逅-react-开发-react-的依赖引入" data-v-70334359>React 的依赖引入[#](react/02 邂逅 React 开发#react-的依赖引入)</a></li><li class="level-2" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#hello-world-react-02-邂逅-react-开发-hello-world" class="sidebar-link reco-side-hello-world-react-02-邂逅-react-开发-hello-world" data-v-70334359>Hello World[#](react/02 邂逅 React 开发#hello-world)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#hello-react-错误做法-react-02-邂逅-react-开发-hello-react-错误做法" class="sidebar-link reco-side-hello-react-错误做法-react-02-邂逅-react-开发-hello-react-错误做法" data-v-70334359>Hello React – 错误做法[#](react/02 邂逅 React 开发#hello-react-–-错误做法)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#hello-react-正确做法-react-02-邂逅-react-开发-hello-react-正确做法" class="sidebar-link reco-side-hello-react-正确做法-react-02-邂逅-react-开发-hello-react-正确做法" data-v-70334359>Hello React – 正确做法[#](react/02 邂逅 React 开发#hello-react-–-正确做法)</a></li><li class="level-2" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#hello-react-组件化开发-react-02-邂逅-react-开发-hello-react-组件化开发" class="sidebar-link reco-side-hello-react-组件化开发-react-02-邂逅-react-开发-hello-react-组件化开发" data-v-70334359>Hello React – 组件化开发[#](react/02 邂逅 React 开发#hello-react-–-组件化开发)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#组件化-数据依赖-react-02-邂逅-react-开发-组件化-数据依赖" class="sidebar-link reco-side-组件化-数据依赖-react-02-邂逅-react-开发-组件化-数据依赖" data-v-70334359>组件化 - 数据依赖[#](react/02 邂逅 React 开发#组件化-数据依赖)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#组件化-事件绑定-react-02-邂逅-react-开发-组件化-事件绑定" class="sidebar-link reco-side-组件化-事件绑定-react-02-邂逅-react-开发-组件化-事件绑定" data-v-70334359>组件化 – 事件绑定[#](react/02 邂逅 React 开发#组件化-–-事件绑定)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#电影列表展示-react-02-邂逅-react-开发-电影列表展示" class="sidebar-link reco-side-电影列表展示-react-02-邂逅-react-开发-电影列表展示" data-v-70334359>电影列表展示[#](react/02 邂逅 React 开发#电影列表展示)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#计数器案例-react-02-邂逅-react-开发-计数器案例" class="sidebar-link reco-side-计数器案例-react-02-邂逅-react-开发-计数器案例" data-v-70334359>计数器案例[#](react/02 邂逅 React 开发#计数器案例)</a></li><li class="level-2" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#vscode-代码片段-react-02-邂逅-react-开发-vscode-代码片段" class="sidebar-link reco-side-vscode-代码片段-react-02-邂逅-react-开发-vscode-代码片段" data-v-70334359>VSCode 代码片段[#](react/02 邂逅 React 开发#vscode-代码片段)</a></li><li class="level-3" data-v-70334359><a href="/blog/blogs/frontEnd/React/01.html#代码片段过程-react-02-邂逅-react-开发-代码片段过程" class="sidebar-link reco-side-代码片段过程-react-02-邂逅-react-开发-代码片段过程" data-v-70334359>代码片段过程[#](react/02 邂逅 React 开发#代码片段过程)</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div></div><canvas id="vuepress-canvas-cursor"></canvas><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=1873321491.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/Uo7OXdK3g4LQdc2hzJ14qQ==/109951166328143737.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;border-radius:20px;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/Uo7OXdK3g4LQdc2hzJ14qQ==/109951166328143737.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>WaKe（Live）</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Hillsong Young &amp; Free</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div><div class="sponsor-container" data-v-a142c76a><div class="sponsor-love position-absolute transition-3ms" data-v-a142c76a>
+    Sponsor
+  </div> <a href="https://github.com/yokefellow/vuepress-plugin-sponsor" target="_blank" title="Github" class="sponsor-github position-absolute transition-3ms" data-v-a142c76a></a> <ul class="sponsor-payment-options transition-3ms" data-v-a142c76a><li id="alipay-option" class="transition-3ms" data-v-a142c76a></li> <li id="wechat-option" class="transition-3ms" data-v-a142c76a></li> <li id="qq-option" class="transition-3ms" data-v-a142c76a></li> <li id="paypal-option" class="transition-3ms" data-v-a142c76a></li></ul> <div class="sponsor-qrcode-container position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a><div class="sponsor-qrcode-info" style="background-image:url();pointer-events:none;display:none;" data-v-a142c76a data-v-a142c76a></div></div> <div class="sponsor-message position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a>
+      主人忘记设置啦
+    </div></div></div><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div></div></div>
+    <script src="/blog/assets/js/app.41200af2.js" defer></script><script src="/blog/assets/js/3.dc4313c1.js" defer></script><script src="/blog/assets/js/1.6ffa0505.js" defer></script><script src="/blog/assets/js/74.ae19e028.js" defer></script>
+  </body>
+</html>
